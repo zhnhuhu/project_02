@@ -1,0 +1,321 @@
+/* 公共样式：头部，尾部 */
+/* 版心宽度，清除浮动，页面文字颜色 */
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.style_red{
+    color: #c81623;
+}
+/* 申明字体图标 ：注意路径*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+/* 快捷导航 */
+.shortcut{
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+.shortcut .fl ul li{
+    float: left;
+    margin-right: 13px;
+}
+.shortcut .fl ul li a{
+    margin-right: 13px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.shortcut .fr ul li {
+    float: right;
+}
+.shortcut .fr ul li a{
+    padding: 0 15px;
+    border-right: 1px solid #666666;
+    font-size: 12px;
+    color: #666666;
+}
+.shortcut .fr ul li a:nth-child(6){
+    border-right: 0px ;
+}
+
+.shortcut .fr ul li .arrow::after{
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: 6px;
+    
+}
+
+.header{
+    position: relative;
+    height: 105px;
+    /* background-color: pink; */
+}
+.header .logo{
+    position: absolute;
+    top: 25px;
+    width: 175px;
+    height: 57px;
+    /* background-color: skyblue; */
+}
+.header .logo a{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    width: 175px;
+    height: 57px;
+    background-image: url(../images/logo.png);
+    /* font-size: 0; */
+    text-indent: -999px;
+    overflow: hidden;
+}
+.header .search{
+    position: absolute;
+    top: 25px;
+    left: 347px;
+    width: 538px;
+    height: 36px;
+    
+}
+.header .search input{
+    width: 454px;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: solid 2px #b1191a;
+    vertical-align: middle;
+}
+
+.header .search button{
+    width: 80px;
+    height: 36px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.header .hotwords{
+    position: absolute;
+    top: 69px;
+    left: 356px;
+    /* background-color: green; */
+    font-size: 12px;
+    color: #666666;
+}
+.header .hotwords a{
+    margin-right: 19px;
+}
+
+.header .shopcar{
+    position: absolute;
+    top: 25px;
+    right: 63px;
+    width: 140px;
+    height: 36px;
+    background-color:#f7f7f7;
+    border:  1px solid #dfdfdf;
+    line-height: 36px;
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+}
+.header .shopcar::before{
+    /* 注意：反斜杠 */
+    margin-right: 7px;
+    content: '\e93a';
+    font-family: 'icomoon';
+    color: #d84a4a;;
+}
+.header .shopcar::after{
+    margin-left: 14px;
+    content: '\e920';
+    font-family: 'icomoon';
+}
+.header .shopcar .count{
+    position: absolute;
+    top: -3px;
+    left: 105px;
+    /* right: 18px; */
+    /* width: 16px; */
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    border-radius: 8px 8px 8px 0;
+    background-color: #e60012;
+    font-size: 12px;
+    color: #fefefe;;
+}
+.nav{
+    height: 46px;
+    /* background-color: pink; */
+    border-bottom: 2px solid #b1191a;;
+}
+
+.nav .dropdown{
+    float: left;
+    width: 209px;
+    height: 46px;
+    background-color: #b1191a;
+}
+.nav .dropdown dt{
+    text-align: center;
+    line-height: 46px;
+    font-size: 16px;
+    color: #fff;
+}
+.nav .dropdown dd{
+    /* display: none; */
+    height: 466px;
+    background-color: #c81623;
+}
+/* .nav .dropdown dd li{
+    margin-left: 2px;
+    padding-left: 8px;
+    height: 31px;
+    line-height: 31px;
+}
+.nav .dropdown dd li:hover{
+    background-color: #fff;
+}
+.nav .dropdown dd li:hover a{
+    color: #c81623;
+} */
+/* .nav .dropdown dd li a{
+    font-size: 14px;
+    color: #fff;
+} */
+
+.nav .dropdown dd a{
+    display: block;
+    position: relative;
+    margin-left: 2px;
+    padding-left: 8px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+    color: #fff;
+}
+.nav .dropdown dd a:hover{
+    background-color: #fff;
+    color: #c81623;
+}
+.nav .dropdown dd a:hover li::after{
+    /* font-size: 0; */
+    color: #fff;
+}
+
+.nav .dropdown dd a li::after{
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.nav .navitems li{
+    float: left;
+}
+.nav .navitems li a{
+    display: inline-block;
+    padding: 0 41px;
+    height: 44px;
+    background-color: #fff;
+    line-height: 45px;
+}
+.footer{
+    margin-top: 31px;
+    padding-top: 31px;
+    /* padding-bottom: 40px; */
+    height: 417px;
+    background-color: #f5f5f5;
+}
+
+.footer .mod_service{
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 78px;
+    /* background-color: green; */
+    border-bottom: 1px solid #ededed;
+}
+.footer .mod_service ul li{
+    float: left;
+    width: 226px;
+    height: 49px;
+    /* background-color: pink; */
+}
+.footer .mod_service ul li h5{
+    float: left;
+    margin-right: 7px;
+    width: 49px;
+    height: 49px;
+    /* background-color: purple; */
+    background-image: url(../images/icons.png);
+    background-position: -253px -2px;
+}
+.service_txt h4{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+.service_txt p{
+    font-size: 12px;
+    color: #666666;
+}
+.mod_help{
+    padding-top: 21px;
+    padding-left: 35px;
+    padding-right: 65px;
+    height: 188px;
+    /* background-color: pink; */
+}
+
+.mod_help .help_text dl{
+    float: left;
+    width: 183px;
+}
+.mod_help .help_text dt{
+    color: #333;
+    margin-bottom: 13px;
+}
+.mod_help .help_text dd{
+    font-size: 12px;
+    color: #666666;
+}
+
+.mod_help .help_text dl:nth-child(6){
+    text-align: center;
+}
+.mod_help .help_text dd p{
+    margin-top: 8px;
+    color: #333;
+}
+
+.mod_copyright{
+    margin-top: 5px;
+    text-align: center;
+}
+.mod_copyright .links{
+    margin-bottom: 8px;
+}
+.mod_copyright .links a{
+    padding: 0 3px;
+}
+

@@ -1,0 +1,86 @@
+.header h1{
+    position: relative;
+    width: 172px;
+    height: 61px;
+    /* background-color: pink; */
+}
+.header h1 .sk{
+    position: absolute;
+    left: 186px;
+    top: 10px;
+    padding: 0 13px;
+    border-left: 1px solid #b1191a;
+}
+.nav .dropdown li{
+    float: left;
+    margin-right: 57px;
+}
+.list_nav{
+    height: 47px;
+    
+    border-bottom: 2px solid #b1191a;
+}
+.list_nav .sk_list{
+    padding-left: 28px;
+    width: 389px;
+    height: 45px;
+    float: left;
+    /* background-color: green; */
+}
+.list_nav .sk_list li{
+    float: left;
+    line-height: 45px;
+}
+.list_nav .sk_list li a{
+    margin-right: 56px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+.list_nav .sk_con{
+    float: left;
+    height: 45px;
+    line-height: 45px;
+}
+.list_nav .sk_con li{
+    float: left;
+}
+.list_nav .sk_con li a{
+    margin-right: 40px;
+    font-size: 16px;
+    color: #666666;
+}
+.list_nav .sk_con li:nth-child(2) a{
+    color: #c81623;
+}
+.list_nav .sk_con li a:hover{
+    color: #b1191a;
+}
+.list_nav .sk_list li a:hover{
+    color: #b1191a;
+}
+.list_nav .sk_con li:nth-last-child(1) a::after{
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+.list_container .sk_bd{
+    /* height: 2000px; */
+    margin-top: 25px;
+    margin-bottom: 270px;
+    overflow: hidden;
+}
+.list_container .sk_bd li{
+    float: left;
+    margin-bottom: 12px;
+    margin-right: 12px;
+}
+.list_container .sk_bd li:nth-child(4n){
+    margin-right: 0;
+}
+.list_container .sk_bd img{
+    width: 290px;
+    border: 1px solid transparent;
+}
+.list_container .sk_bd img:hover{
+    border: 1px solid  #e12228;
+}
